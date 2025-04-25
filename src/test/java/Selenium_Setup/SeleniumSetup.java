@@ -1,6 +1,7 @@
 package Selenium_Setup;
 
 import java.io.File;
+
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -80,7 +81,7 @@ public class SeleniumSetup
 		{
 			TakesScreenshot screenshot = ((TakesScreenshot) driver);
 			File srcfile = screenshot.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(srcfile, new File("C:\\Users\\Mindfire\\eclipse-workspace\\Selenium-sample\\src\\test\\java\\Image\\"+filename+".png"));
+			FileUtils.copyFile(srcfile, new File("C:\\Users\\Mindfire\\eclipse-workspace\\Selenium-GoogleSearch\\src\\test\\resources\\"+filename+".png"));
 		}
 		catch(Exception e)
 		{
